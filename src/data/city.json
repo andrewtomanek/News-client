@@ -1,0 +1,33 @@
+{
+  "message": "accurate",
+  "cod": "200",
+  "count": 1,
+  "list": [
+    {
+      "id": 3061369,
+      "name": "Zlin",
+      "coord": { "lat": 49.2267, "lon": 17.6663 },
+      "main": {
+        "temp": 8.8,
+        "pressure": 1015,
+        "humidity": 45,
+        "temp_min": 6.67,
+        "temp_max": 10.56
+      },
+      "dt": 1552918518,
+      "wind": { "speed": 7.2, "deg": 260 },
+      "sys": { "country": "CZ" },
+      "rain": { "1h": 0.25 },
+      "snow": null,
+      "clouds": { "all": 0 },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10d"
+        }
+      ]
+    }
+  ]
+}
