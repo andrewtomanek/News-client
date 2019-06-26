@@ -34,16 +34,6 @@
         </div>
       </article>
     </div>
-    <footer>
-      <div class="footer__box">
-        <div class="footer__content">
-          <router-link to="/">News client</router-link>
-          <a class="footer__link" href="mailto:andrewtomanek@gmail.com">
-            Kontakt
-          </a>
-        </div>
-      </div>
-    </footer>
     <img src="../assets/giphy.png" />
   </div>
 </template>
@@ -78,7 +68,7 @@ export default {
   grid-auto-flow: row;
   place-items: center;
   justify-content: space-around;
-  width: 100%;
+  width: 100vw;
 }
 
 .giphy__trending-results {

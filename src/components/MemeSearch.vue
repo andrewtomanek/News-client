@@ -212,4 +212,24 @@ export default {
   border: 0.3rem solid white;
   cursor: pointer;
 }
+
+@media all and (max-width: 736px) {
+  .meme__controls {
+    grid-auto-flow: row;
+  }
+
+  .form-group {
+    grid-auto-flow: row;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .meme__controls {
+    grid-auto-flow: row;
+  }
+
+  .form-group {
+    grid-auto-flow: row;
+  }
+}
 </style>

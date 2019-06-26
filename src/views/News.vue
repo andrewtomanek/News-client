@@ -57,11 +57,7 @@ export default {
 };
 </script>
 
-<style>
-#app {
-  display: grid;
-  grid-auto-flow: row;
-}
+<style scoped>
 .news__reload {
   display: grid;
   place-items: center;

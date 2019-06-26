@@ -2,14 +2,17 @@
   <div id="app">
     <app-header></app-header>
     <router-view />
+    <app-footer></app-footer>
   </div>
 </template>
 
 <script>
 import Header from "./components/Header.vue";
+import Footer from "./components/Footer.vue";
 export default {
   components: {
-    appHeader: Header
+    appHeader: Header,
+    appFooter: Footer
   }
 };
 </script>
@@ -18,6 +21,7 @@ export default {
 :root {
   --blue: hsla(195, 100%, 95%, 1);
   --water: hsla(195, 56%, 48%, 1);
+  --blau: hsla(195, 70%, 60%, 1);
   --red: hsla(13, 69%, 50%, 1);
   --orange: hsla(31, 100%, 54%, 1);
   --green: hsla(143, 85%, 50%, 1);
@@ -33,16 +37,21 @@ body {
   padding: 0;
   margin: 0;
   background-color: var(--blue);
-  min-height: 100vh;
   overflow-x: hidden;
 }
 
 #app {
+  background-color: var(--blau);
+  display: grid;
+  grid-auto-flow: row;
+  align-content: space-between;
+  min-height: 100vh;
   padding: 0;
   margin: 0;
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 }
 
 .fade-enter {

@@ -73,10 +73,9 @@ export default {
 };
 </script>
 
-<style>
-#app {
-  display: grid;
-  grid-auto-flow: row;
+<style scoped>
+.weather {
+  place-self: start stretch;
 }
 
 .weather__container {
