@@ -34,6 +34,17 @@
         </div>
       </article>
     </div>
+    <footer>
+      <div class="footer__box">
+        <div class="footer__content">
+          <router-link to="/">News client</router-link>
+          <a class="footer__link" href="mailto:andrewtomanek@gmail.com">
+            Kontakt
+          </a>
+        </div>
+      </div>
+    </footer>
+    <img src="../assets/giphy.png" />
   </div>
 </template>
 

@@ -1,14 +1,18 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Zprávy</router-link>
-      <router-link to="/weather">Počasí</router-link>
-      <router-link to="/forecast">Prědpověd</router-link>
-      <router-link to="/memes">Memes</router-link>
-    </div>
+    <app-header></app-header>
     <router-view />
   </div>
 </template>
+
+<script>
+import Header from "./components/Header.vue";
+export default {
+  components: {
+    appHeader: Header
+  }
+};
+</script>
 
 <style>
 :root {
@@ -39,36 +43,6 @@ body {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-#nav {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  background-color: var(--red);
-  padding: 1rem;
-  height: 10vh;
-}
-
-#nav a {
-  font-weight: bold;
-  background-color: var(--red);
-  color: white;
-  border-bottom: 0.3rem solid transparent;
-  padding: 1rem;
-  font-size: 1.1rem;
-  font-weight: 800;
-  font-family: "Tahoma";
-  text-align: center;
-  text-decoration: none;
-}
-
-#nav a.router-link-exact-active {
-  border-bottom: 0.3rem solid var(--green);
-}
-
-#nav a:hover {
-  border-bottom: 0.3rem solid var(--blue);
 }
 
 .fade-enter {
