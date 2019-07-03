@@ -40,6 +40,22 @@ body {
   overflow-x: hidden;
 }
 
+button {
+  font-family: "Stoke", Helvetica, Arial, sans-serif;
+}
+
+.submit__button {
+  font-family: "Stoke", Helvetica, Arial, sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 900;
+  padding: 0.5rem;
+  background-color: var(--green);
+  border: 0.3rem solid white;
+  cursor: pointer;
+}
+
 #app {
   background-color: var(--blau);
   display: grid;
@@ -48,7 +64,7 @@ body {
   min-height: 100vh;
   padding: 0;
   margin: 0;
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: "Cardo", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
