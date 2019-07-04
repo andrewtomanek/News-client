@@ -34,7 +34,6 @@
         </div>
       </article>
     </div>
-    <img src="../assets/giphy.png" />
   </div>
 </template>
 

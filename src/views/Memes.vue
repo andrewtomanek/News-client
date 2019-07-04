@@ -18,6 +18,7 @@
         <Memelist v-bind:memeArr="memeArr"></Memelist>
       </transition>
     </div>
+    <img src="../assets/giphy.png" />
   </div>
 </template>
 
