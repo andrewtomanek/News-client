@@ -1,6 +1,12 @@
 {
+  "version": 2,
+  "name": "News-client",
   "builds": [
-    { "src": "*.html", "use": "@now/static" },
-    { "src": "date.js", "use": "@now/node" }
-  ]
+    {"src": "package.json", "use": "@now/static-build"}
+  ],
+   "routes": [
+      {"src": "/service-worker.js", "headers": { "cache-control": "s-maxage=0" } },
+      { "handle": "filesystem" },
+      {"src": ".*", "dest": "/index.html"}
+    ]
 }
