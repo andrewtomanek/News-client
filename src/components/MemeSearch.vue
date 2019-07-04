@@ -77,7 +77,7 @@ export default {
       this.apiString = this.$v.searchString.$model;
       axios
         .get(
-          `http://api.giphy.com/v1/gifs/search?q=${this.apiString}&api_key=${
+          `https://api.giphy.com/v1/gifs/search?q=${this.apiString}&api_key=${
             process.env.VUE_APP_GIPHY_API_KEY
           }&limit=10`
         )
@@ -91,7 +91,7 @@ export default {
       this.showTrending = true;
       axios
         .get(
-          `http://api.giphy.com/v1/gifs/trending?api_key=${
+          `https://api.giphy.com/v1/gifs/trending?api_key=${
             process.env.VUE_APP_GIPHY_API_KEY
           }`
         )
