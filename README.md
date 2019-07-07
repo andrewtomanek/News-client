@@ -8,8 +8,10 @@
 # News-client
 
 <br />
+  <a href="https://news-client.andrewtomanek.now.sh">
+   Website
+  </a>
 
-API news client using Vue.js https://news-client.andrewtomanek.now.sh
 <br />
 
 Get current news, weather a memes.
@@ -39,7 +41,8 @@ Popular GIPH's using GIPHY API<br />
 
 3. Install dependencies: npm install
 
-4. Create Giphy.com account https://giphy.com
+4. Create Giphy.com, Newsapi.org and Openweathermap.com
+   account.
 
 5. Enter your API variables in `.env.local` file
    const API_KEY = 'ENTER YOUR API';
