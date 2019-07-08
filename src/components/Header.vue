@@ -23,6 +23,7 @@ nav {
   background-color: var(--red);
   padding: 1rem;
   height: 10vh;
+  width: 100vw;
 }
 
 nav a {

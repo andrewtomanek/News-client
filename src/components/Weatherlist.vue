@@ -69,12 +69,7 @@ export default {
   background-color: skyblue;
   overflow: hidden;
 }
-.weather__container {
-  display: grid;
-  grid-auto-flow: row;
-  margin: 0;
-  width: 100%;
-}
+
 .weather__box {
   display: grid;
   grid-auto-flow: row;

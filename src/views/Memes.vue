@@ -7,7 +7,7 @@
         </button>
       </div>
     </transition>
-    <div class="weather__container">
+    <div class="results__wrap">
       <transition v-if="revealElement" name="fade" mode="out-in" appear>
         <MemeSearch
           v-on:searchResolved="searchResolved"
@@ -55,12 +55,6 @@ export default {
 #app {
   display: grid;
   grid-auto-flow: row;
-}
-
-.weather__container {
-  display: grid;
-  grid-auto-flow: row;
-  width: 100%;
 }
 
 .weather__reload {

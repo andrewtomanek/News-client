@@ -7,7 +7,7 @@
         </button>
       </div>
     </transition>
-    <div class="weather__container">
+    <div class="results__wrap">
       <transition v-if="revealWeather" name="fade" mode="out-in" appear>
         <ForecastSearch
           v-on:fetchedData="fetchedData"
@@ -72,11 +72,6 @@ export default {
 .weather {
   width: 100%;
   margin: 0;
-}
-.weather__container {
-  display: grid;
-  grid-auto-flow: row;
-  width: 100%;
 }
 
 .weather__reload {

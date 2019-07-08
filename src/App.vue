@@ -70,6 +70,13 @@ button {
   overflow: hidden;
 }
 
+.results__wrap {
+  display: grid;
+  grid-auto-flow: row;
+  margin: 0;
+  width: 100vw;
+}
+
 .fade-enter {
   opacity: 0;
 }
