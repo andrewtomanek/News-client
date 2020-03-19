@@ -1,12 +1,31 @@
 {
   "version": 2,
-  "name": "News-client",
+  "build": {
+    "env": {
+      "VUE_APP_OPEN_WEATHER_MAP_KEY": "@vue-app-open-weather-map-key",
+      "VUE_APP_NEWS_API_KEY": "@vue-app-news-api-key",
+      "VUE_APP_GIPHY_API_KEY": "@vue-app-giphy-api-key"
+    }
+  },
   "builds": [
-    {"src": "package.json", "use": "@now/static-build"}
+    {
+      "src": "package.json",
+      "use": "@now/static-build"
+    }
   ],
-   "routes": [
-      {"src": "/service-worker.js", "headers": { "cache-control": "s-maxage=0" } },
-      { "handle": "filesystem" },
-      {"src": ".*", "dest": "/index.html"}
-    ]
+  "routes": [
+    {
+      "src": "/service-worker.js",
+      "headers": {
+        "cache-control": "s-maxage=0"
+      }
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": ".*",
+      "dest": "/index.html"
+    }
+  ]
 }

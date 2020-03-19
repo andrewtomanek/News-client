@@ -28,7 +28,7 @@
           </p>
           <img
             :src="
-              'http://openweathermap.org/img/w/' +
+              'https://openweathermap.org/img/w/' +
                 searchItem.weather[0].icon +
                 '.png'
             "

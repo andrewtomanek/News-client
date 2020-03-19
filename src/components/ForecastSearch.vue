@@ -75,7 +75,7 @@ export default {
       this.citySearch = this.$v.searchString.$model;
       axios
         .get(
-          `http://api.openweathermap.org/data/2.5/forecast?q=${
+          `https://api.openweathermap.org/data/2.5/forecast?q=${
             this.citySearch
           }&units=metric&lang=cz&appid=${
             process.env.VUE_APP_OPEN_WEATHER_MAP_KEY

@@ -6,7 +6,7 @@
       <p class="city large">Oblačnost: {{ city.weather[0].description }}</p>
       <img
         :src="
-          'http://openweathermap.org/img/w/' + city.weather[0].icon + '.png'
+          'https://openweathermap.org/img/w/' + city.weather[0].icon + '.png'
         "
         alt=""
         class="icon large"
