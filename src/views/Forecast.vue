@@ -26,8 +26,8 @@
 </template>
 
 <script>
-import ForecastList from "../components/ForecastList";
-import ForecastSearch from "../components/ForecastSearch";
+import ForecastList from "../components/weather/ForecastList";
+import ForecastSearch from "../components/weather/ForecastSearch";
 
 export default {
   name: "weather-home",
